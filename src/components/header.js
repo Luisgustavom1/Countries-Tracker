@@ -1,4 +1,3 @@
-import moon from '../image/moon.png'
 import Header from '../styles/header'
 export default function HeaderComponent(){
     const Darks = true

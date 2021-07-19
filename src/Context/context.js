@@ -1,9 +1,9 @@
 import { createContext } from "react";
 
 const AppContext = createContext({
-    DarkMode: false,
+    darkMode: false,
     setToDarkMode: () => {},
-    Search: null,
-    setToSearch: () => {},
+    data: [],
+    setToData: () => {},
 })
 export default AppContext

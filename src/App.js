@@ -6,6 +6,7 @@ import Cards from './components/cards'
 
 import {BrowserRouter, Switch, Route} from 'react-router-dom'
 import PageDescription from './components/PageDescription'
+import AppProvider from './Context/provider'
 
 const GlobalStyle = createGlobalStyle`
   body{
@@ -39,7 +40,7 @@ const GlobalStyle = createGlobalStyle`
 function App() {
   const Dark = true 
   return (
-    <>
+    <AppProvider>
       <GlobalStyle Dark={Dark}/>
       <HeaderComponent></HeaderComponent>
       <main>
@@ -50,7 +51,7 @@ function App() {
           </Switch>
         </BrowserRouter>
       </main>
-    </>
+    </AppProvider>
   );
 }
 

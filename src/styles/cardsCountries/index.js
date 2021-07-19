@@ -7,18 +7,20 @@ const Cards = styled.div`
     margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 83px;
     color: ${(props) => 
         props.DarkMode === true ? colors.white : colors.LightModeText
     };
     div{
         background: ${props => props.DarkMode === true ? colors.DarkModeElements : colors.LightModeBackground};
         width: 260px;
+        height: 356px;
         border-radius: 6px;
         box-shadow: 2px 2px 10px rgba(0, 0, 0, .1);
-        margin: 50px 0 20px 0;
+        margin: 50px 0 -53px 0;
         img{
             width: 100%;
+            height: 174px;
             border-radius: 6px 6px 0 0;
         }
         section{
