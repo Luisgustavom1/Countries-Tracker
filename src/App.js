@@ -9,6 +9,7 @@ import {BrowserRouter, Switch, Route} from 'react-router-dom'
 import PageDescription from './components/PageDescription'
 import AppProvider from './Context/provider'
 import AppContext from './Context/context'
+import { Main } from './styles/main'
 
 const GlobalStyle = createGlobalStyle`
   body{
@@ -24,20 +25,8 @@ const GlobalStyle = createGlobalStyle`
     outline: none;
     border: none;
   }
-  input{
-    background-color: ${props => props.darkMode == false ? colors.LightModeBackground :  colors.DarkModeElements};
-    ;
-    color: ${props => props.darkMode == true ? colors.white : colors.LightModeText};                
-    ::-webkit-input-placeholder{
-      color: ${props => props.darkMode == true ? colors.white : colors.LightModeInput};                
-    }
-  }
   a, li, ul, ol{
     text-decoration: none;
-  }
-  main{
-    background-color: ${props => props.darkMode === false ? colors.LightModeBackground : colors.DarkModeBackground};
-    min-height: 100vh;
   }
   nav{
     color: ${props => props.darkMode == true ? colors.white : colors.LightModeInput};                
@@ -46,19 +35,18 @@ const GlobalStyle = createGlobalStyle`
 
 function App() {
   const {darkMode} = useContext(AppContext)
-
   return (
     <AppProvider>
       <GlobalStyle darkMode={darkMode} colors={colors}/>
       <HeaderComponent></HeaderComponent>
-      <main>
+      <Main darkMode={darkMode}>
         <BrowserRouter>
           <Switch>
             <Route path='/' component={Cards} exact/>
             <Route path='/country/:areaParam' component={PageDescription} />
           </Switch>
         </BrowserRouter>
-      </main>
+      </Main>
     </AppProvider>
   );
 }

@@ -24,5 +24,13 @@ const InputAndOption = styled.div`
         background-color: ${props => props.darkMode == true ? colors.DarkModeElements : colors.white};
         border-radius: 6px;
     }
+    input{
+        background-color: ${props => props.darkMode == true ? colors.DarkModeElements : colors.white};
+        ;
+        color: ${props => props.darkMode == true ? colors.white : colors.LightModeText};                
+        ::-webkit-input-placeholder{
+          color: ${props => props.darkMode == true ? colors.white : colors.LightModeText};                
+        }
+      }
 `
 export default InputAndOption
