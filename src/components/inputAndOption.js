@@ -7,7 +7,7 @@ import InputAndOption from '../styles/inputAndOption'
 export default function InputAndOptionComponente(){
     const Mode = true
     const [search, setSearch] = useState('a')
-    const {data, setToData} = useContext(AppContext)
+    const {data, setToData, darkMode} = useContext(AppContext)
 
     useEffect(() => {
         fetch(`https://restcountries.eu/rest/v2/name/${search}`)
@@ -17,10 +17,10 @@ export default function InputAndOptionComponente(){
     },[search])
 
     return(
-        <InputAndOption Mode={Mode}>
+        <InputAndOption darkMode={darkMode}>
             <div className='input'>
                 {/* <img src={lupa} alt='Icon lupa'></img> */}
-                <i class="fas fa-search" style={{color: `${Mode == true ? colors.white : colors.LightModeInput}`}}></i>
+                <i class="fas fa-search" style={{color: `${darkMode == true ? colors.white : colors.LightModeInput}`}}></i>
                 <input type='text' placeholder='Search for a country...' value={search} onChange={(e) => setSearch(e.target.value)}></input>
             </div>
             <div className='options'>

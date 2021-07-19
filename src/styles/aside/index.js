@@ -1,10 +1,8 @@
 import styled from 'styled-components'
-import colors from '../colors'
 
 export const Aside = styled.aside`
     grid-area: aside;
     margin: 80px 0 0 80px;
-    color: ${props => props.teste == true ? colors.white : colors.LightModeText};
 
     display: grid;
     grid-template-rows: 90% 10%;
@@ -21,6 +19,7 @@ export const Aside = styled.aside`
         display: flex;
         align-items: center;
         gap: 10px;
+        flex-wrap: wrap;
 
         grid-area: footer;
     }

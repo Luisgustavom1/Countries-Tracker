@@ -1,7 +1,7 @@
 import { createContext } from "react";
 
 const AppContext = createContext({
-    darkMode: false,
+    darkMode: true,
     setToDarkMode: () => {},
     data: [],
     setToData: () => {},

@@ -4,9 +4,11 @@ import colors from './styles/colors'
 import HeaderComponent from './components/header'
 import Cards from './components/cards'
 
+import {useContext} from 'react'
 import {BrowserRouter, Switch, Route} from 'react-router-dom'
 import PageDescription from './components/PageDescription'
 import AppProvider from './Context/provider'
+import AppContext from './Context/context'
 
 const GlobalStyle = createGlobalStyle`
   body{
@@ -16,36 +18,38 @@ const GlobalStyle = createGlobalStyle`
   }
   html{
     font-family: 'Nunito Sans', sans-serif;
+    color: ${props => props.darkMode === true ? colors.white : colors.LightModeInput};                
   }
   button, input, textarea{
     outline: none;
     border: none;
   }
   input{
-    background-color: ${props => props.Dark == true ? colors.DarkModeElements : colors.white};
-    color: ${props => props.Dark == true ? colors.white : colors.LightModeText};                
+    background-color: ${props => props.darkMode == false ? colors.LightModeBackground :  colors.DarkModeElements};
+    ;
+    color: ${props => props.darkMode == true ? colors.white : colors.LightModeText};                
     ::-webkit-input-placeholder{
-      color: ${props => props.Dark == true ? colors.white : colors.LightModeInput};                
+      color: ${props => props.darkMode == true ? colors.white : colors.LightModeInput};                
     }
   }
   a, li, ul, ol{
     text-decoration: none;
   }
-  Link{
-    color: ${props => props.Dark == true ? colors.white : colors.LightModeInput};  
-    text-decoration: none;              
-  }
   main{
-    background-color: ${props => props.Dark == true ? colors.DarkModeBackground : colors.LightModeBackground};
+    background-color: ${props => props.darkMode === false ? colors.LightModeBackground : colors.DarkModeBackground};
     min-height: 100vh;
+  }
+  nav{
+    color: ${props => props.darkMode == true ? colors.white : colors.LightModeInput};                
   }
 `
 
 function App() {
-  const Dark = true 
+  const {darkMode} = useContext(AppContext)
+
   return (
     <AppProvider>
-      <GlobalStyle Dark={Dark}/>
+      <GlobalStyle darkMode={darkMode} colors={colors}/>
       <HeaderComponent></HeaderComponent>
       <main>
         <BrowserRouter>

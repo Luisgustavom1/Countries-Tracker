@@ -5,12 +5,11 @@ import InputAndOption from './inputAndOption'
 
 import {Link} from 'react-router-dom'
 export default function CardsCountrie(){
-    const DarkMode = true
-    const {data} = useContext(AppContext)
+    const {data, darkMode} = useContext(AppContext)
     return(
         <>
             <InputAndOption/>
-            <Cards DarkMode={DarkMode}>
+            <Cards darkMode={darkMode}>
                 {data.map(country => {
                     return  <Link to={`/country/:${country.area}`}>
                                 <div id={country.area}>

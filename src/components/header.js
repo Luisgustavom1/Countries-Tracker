@@ -1,11 +1,17 @@
+import { useContext } from 'react'
+import AppContext from '../Context/context'
 import Header from '../styles/header'
 export default function HeaderComponent(){
-    const Darks = true
+    const {darkMode, setToDarkMode} = useContext(AppContext)
+    async function changeTheme(){
+        await setToDarkMode(!darkMode)
+        console.log(darkMode)
+    }
     return(
-        <Header Darks = {Darks}>
+        <Header darkMode={darkMode}>
             <div class="container">
                 <p>Where in the world?</p>
-                <div>
+                <div onClick={() => changeTheme()}>
                     <i class="fas fa-moon"></i>
                     <p>Dark Mode</p>
                 </div>

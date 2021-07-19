@@ -9,7 +9,7 @@ const InputAndOption = styled.div`
     align-items: center;
     padding-top: 50px;
     .input{
-        background-color: ${props => props.Mode == true ? colors.DarkModeElements : colors.white};
+        background-color: ${props => props.darkMode == true ? colors.DarkModeElements : colors.white};
         display: flex;
         align-items: center;
         width: 400px;
@@ -21,7 +21,7 @@ const InputAndOption = styled.div`
     .options{
         box-shadow: 2px 2px 10px rgba(0, 0, 0, .1);
         padding: 15px 15px;
-        background-color: ${props => props.Mode == true ? colors.DarkModeElements : colors.white};
+        background-color: ${props => props.darkMode == true ? colors.DarkModeElements : colors.white};
         border-radius: 6px;
     }
 `

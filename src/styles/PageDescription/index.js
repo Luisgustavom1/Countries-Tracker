@@ -12,6 +12,8 @@ const PageDescription = styled.div`
     img{
         grid-area: img;
         margin-top: 60px;
+        width: 600px;
+        height: 400px;
     }
 `
 

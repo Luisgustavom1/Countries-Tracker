@@ -3,7 +3,8 @@ import colors from '../colors'
 
 const Header = styled.header`
     font-weight: 800;
-    background-color: ${props => props.Darks == true ? colors.DarkModeElements : colors.white};
+    color: ${props => props.darkMode == true ? colors.white : colors.DarkModeElements};
+    background-color: ${props => props.darkMode == true ? colors.DarkModeElements : colors.white};
     padding: 7px 0;
     .container{
         display: flex;
@@ -11,7 +12,6 @@ const Header = styled.header`
         align-items: center;
         width: 85%;
         margin: 0 auto;
-        color: ${props => props.Darks == true ? colors.white : colors.LightModeText};
         font-size: 16px;
         div{
             display: flex;

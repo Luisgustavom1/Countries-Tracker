@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import colors from "../../colors";
 import Buttons from '../button'
 
 const Nav = styled(Buttons)`

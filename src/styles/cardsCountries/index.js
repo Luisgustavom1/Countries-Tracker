@@ -8,11 +8,9 @@ const Cards = styled.div`
     display: flex;
     align-items: center;
     gap: 83px;
-    color: ${(props) => 
-        props.DarkMode === true ? colors.white : colors.LightModeText
-    };
+    
     div{
-        background: ${props => props.DarkMode === true ? colors.DarkModeElements : colors.LightModeBackground};
+        background: ${props => props.darkMode === true ? colors.DarkModeElements : colors.LightModeBackground};
         width: 260px;
         height: 356px;
         border-radius: 6px;
@@ -26,7 +24,7 @@ const Cards = styled.div`
         section{
             padding: 0 15px 40px 20px;
             color: ${(props) => 
-                props.DarkMode === true ? colors.white : colors.LightModeText
+                props.darkMode === true ? colors.white : colors.LightModeText
             };
             h1{
                 font-size: 18px;
