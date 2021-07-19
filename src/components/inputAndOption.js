@@ -26,7 +26,7 @@ export default function InputAndOptionComponente(){
             <div className='options'>
                 <input list='countries' type='text' id='countriesInput' placeholder='Filter by Region'></input>
                 <datalist id='countries'>
-                    <option value='África'>All</option>
+                    <option value='All'>All</option>
                     <option value='África'>África</option>
                     <option value='América'>América</option>
                     <option value='Europe'>Europe</option>

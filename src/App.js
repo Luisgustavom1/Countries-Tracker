@@ -31,6 +31,10 @@ const GlobalStyle = createGlobalStyle`
   a, li, ul, ol{
     text-decoration: none;
   }
+  Link{
+    color: ${props => props.Dark == true ? colors.white : colors.LightModeInput};  
+    text-decoration: none;              
+  }
   main{
     background-color: ${props => props.Dark == true ? colors.DarkModeBackground : colors.LightModeBackground};
     min-height: 100vh;
@@ -47,7 +51,7 @@ function App() {
         <BrowserRouter>
           <Switch>
             <Route path='/' component={Cards} exact/>
-            <Route path='/country' component={PageDescription} />
+            <Route path='/country/:areaParam' component={PageDescription} />
           </Switch>
         </BrowserRouter>
       </main>

@@ -25,14 +25,14 @@ const Cards = styled.div`
         }
         section{
             padding: 0 15px 40px 20px;
+            color: ${(props) => 
+                props.DarkMode === true ? colors.white : colors.LightModeText
+            };
             h1{
                 font-size: 18px;
                 margin-bottom: 20px;
             }
             strong{
-                color: ${(props) => 
-                    props.DarkMode === true ? colors.white : colors.LightModeText
-                };
                 font-weight: 600;
             }
             p{
