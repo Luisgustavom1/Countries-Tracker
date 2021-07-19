@@ -27,7 +27,7 @@ const Cards = styled.div`
                 font-size: 18px;
                 margin-bottom: 20px;
             }
-            a{
+            strong{
                 color: ${(props) => 
                     props.DarkMode === true ? colors.white : colors.LightModeText
                 };

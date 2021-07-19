@@ -1,5 +1,4 @@
 import React from 'react'
-import lupa from '../image/lupa.png'
 
 import colors from '../styles/colors'
 import InputAndOption from '../styles/inputAndOption'

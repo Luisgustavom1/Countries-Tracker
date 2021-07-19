@@ -12,75 +12,74 @@ export default function CardsCountrie(){
                     <img src='https://restcountries.eu/data/afg.svg'></img>
                     <section>
                         <h1>Afganistan</h1>
-                        <p><a href="#">Population:</a> 412344123</p>
-                        <p><a href="#">Region:</a> Asia</p>
-                        <p><a href="#">Capital:</a> brasilia</p>
+                        <p><strong>Population:</strong> 412344123</p>
+                        <p><strong>Region:</strong> Asia</p>
+                        <p><strong>Capital:</strong> brasilia</p>
                     </section>
                 </div>
                 <div>
                     <img src='https://restcountries.eu/data/afg.svg'></img>
                     <section>
                         <h1>Afganistan</h1>
-                        <p><a href="#">Population:</a> 412344123</p>
-                        <p><a href="#">Region:</a> Asia</p>
-                        <p><a href="#">Capital:</a> brasilia</p>
+                        <p><strong>Population:</strong> 412344123</p>
+                        <p><strong>Region:</strong> Asia</p>
+                        <p><strong>Capital:</strong> brasilia</p>
                     </section>
                 </div>
                 <div>
                     <img src='https://restcountries.eu/data/afg.svg'></img>
                     <section>
                         <h1>Afganistan</h1>
-                        <p><a href="#">Population:</a> 412344123</p>
-                        <p><a href="#">Region:</a> Asia</p>
-                        <p><a href="#">Capital:</a> brasilia</p>
+                        <p><strong>Population:</strong> 412344123</p>
+                        <p><strong>Region:</strong> Asia</p>
+                        <p><strong>Capital:</strong> brasilia</p>
                     </section>
                 </div>
                 <div>
                     <img src='https://restcountries.eu/data/afg.svg'></img>
                     <section>
                         <h1>Afganistan</h1>
-                        <p><a href="#">Population:</a> 412344123</p>
-                        <p><a href="#">Region:</a> Asia</p>
-                        <p><a href="#">Capital:</a> brasilia</p>
+                        <p><strong>Population:</strong> 412344123</p>
+                        <p><strong>Region:</strong> Asia</p>
+                        <p><strong>Capital:</strong> brasilia</p>
                     </section>
                 </div>
                 <div>
                     <img src='https://restcountries.eu/data/afg.svg'></img>
                     <section>
                         <h1>Afganistan</h1>
-                        <p><a href="#">Population:</a> 412344123</p>
-                        <p><a href="#">Region:</a> Asia</p>
-                        <p><a href="#">Capital:</a> brasilia</p>
+                        <p><strong>Population:</strong> 412344123</p>
+                        <p><strong>Region:</strong> Asia</p>
+                        <p><strong>Capital:</strong> brasilia</p>
                     </section>
                 </div>
                 <div>
                     <img src='https://restcountries.eu/data/afg.svg'></img>
                     <section>
                         <h1>Afganistan</h1>
-                        <p><a href="#">Population:</a> 412344123</p>
-                        <p><a href="#">Region:</a> Asia</p>
-                        <p><a href="#">Capital:</a> brasilia</p>
+                        <p><strong>Population:</strong> 412344123</p>
+                        <p><strong>Region:</strong> Asia</p>
+                        <p><strong>Capital:</strong> brasilia</p>
                     </section>
                 </div>
                 <div>
                     <img src='https://restcountries.eu/data/afg.svg'></img>
                     <section>
                         <h1>Afganistan</h1>
-                        <p><a href="#">Population:</a> 412344123</p>
-                        <p><a href="#">Region:</a> Asia</p>
-                        <p><a href="#">Capital:</a> brasilia</p>
+                        <p><strong>Population:</strong> 412344123</p>
+                        <p><strong>Region:</strong> Asia</p>
+                        <p><strong>Capital:</strong> brasilia</p>
                     </section>
                 </div>
                 <div>
                     <img src='https://restcountries.eu/data/afg.svg'></img>
                     <section>
                         <h1>Afganistan</h1>
-                        <p><a href="#">Population:</a> 412344123</p>
-                        <p><a href="#">Region:</a> Asia</p>
-                        <p><a href="#">Capital:</a> brasilia</p>
+                        <p><strong>Population:</strong> 412344123</p>
+                        <p><strong>Region:</strong> Asia</p>
+                        <p><strong>Capital:</strong> brasilia</p>
                     </section>
                 </div>
-
             </Cards>
         </>
     )

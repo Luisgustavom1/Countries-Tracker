@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import colors from '../colors'
+import colors from '../../colors'
 
-const Button = styled.nav`
+const Buttons = styled.nav`
     display: flex;
     align-items: center;
     justify-content: center;
@@ -13,4 +13,4 @@ const Button = styled.nav`
     border-radius: 4px;
 `
 
-export default Button
+export default Buttons
