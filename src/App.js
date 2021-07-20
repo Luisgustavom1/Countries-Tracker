@@ -1,6 +1,5 @@
-import {useContext, useState} from 'react'
+import usePersistedState from './utils/usePersistedState'
 import { createGlobalStyle, ThemeProvider } from 'styled-components'
-import colors from './styles/colors'
 
 import Header from './components/header'
 import Cards from './components/cards'
@@ -8,7 +7,6 @@ import Cards from './components/cards'
 import {BrowserRouter, Switch, Route} from 'react-router-dom'
 import PageDescription from './components/PageDescription'
 import AppProvider from './Context/provider'
-import AppContext from './Context/context'
 import light from './styles/Theme/light'
 import dark from './styles/Theme/dark'
 
@@ -32,13 +30,16 @@ const GlobalStyle = createGlobalStyle`
 `
 
 function App() {
-  const {theme, setTheme} = useContext(AppContext)
-
+    const [theme, setTheme] = usePersistedState('Theme', dark)
+    
+    const changeTheme = () => {
+      setTheme(theme.title === 'light' ? dark : light)
+    }
   return (
     <AppProvider>
       <ThemeProvider theme={theme}>
         <GlobalStyle/>
-        <Header />
+        <Header changeTheme={changeTheme}/>
           <BrowserRouter>
             <Switch>
               <Route path='/' component={Cards} exact/>

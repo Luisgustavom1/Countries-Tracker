@@ -5,7 +5,7 @@ import InputAndOption from '../styles/inputAndOption'
 
 export default function InputAndOptionComponente(){
     const [search, setSearch] = useState('a')
-    const {data, setToData, darkMode} = useContext(AppContext)
+    const {data, setToData} = useContext(AppContext)
 
     useEffect(() => {
         fetch(`https://restcountries.eu/rest/v2/name/${search}`)

@@ -8,7 +8,7 @@ import {Border} from '../styles/Buttons/Border'
 import AppContext from '../Context/context'
 
 export default function Description(){
-    const {data, darkMode} = useContext(AppContext)
+    const {data} = useContext(AppContext)
     const {areaParam} = useParams()
     const [newData, setNewData] = useState([])
     useEffect(() => {
@@ -22,7 +22,7 @@ export default function Description(){
                 {newData.map((countrie) => {
                     return <>
                             <Link to="/">
-                                <Nav darkMode={darkMode}>
+                                <Nav>
                                     <i class="fas fa-arrow-left"></i>
                                     <p>Back</p>
                                 </Nav>
@@ -46,7 +46,7 @@ export default function Description(){
                                 <footer>
                                     Border Countries: 
                                     {countrie.borders.map(border => {
-                                        return <Border darkMode={darkMode}>{border}</Border>
+                                        return <Border>{border}</Border>
                                     })}
                                 </footer>
                             </Aside>
