@@ -1,5 +1,6 @@
-import React, { useContext, useEffect, useState } from 'react'
+import React, { useContext, useEffect} from 'react'
 import { Link, useParams } from 'react-router-dom'
+import useLastCountry from '../utils/lastCountry'
 
 import Nav from '../styles/Buttons/navBack'
 import PageDescription from '../styles/PageDescription'
@@ -10,7 +11,8 @@ import AppContext from '../Context/context'
 export default function Description(){
     const {data} = useContext(AppContext)
     const {areaParam} = useParams()
-    const [newData, setNewData] = useState([])
+    const [newData, setNewData] = useLastCountry('LastCountry', [])
+    
     useEffect(() => {
         setNewData(data.filter((country) => {
             return `:${country.area}` == areaParam && true

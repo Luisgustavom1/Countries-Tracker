@@ -9,7 +9,7 @@ const Cards = styled.div`
     gap: 83px;
     
     div{
-        background: ${props => props.theme.colors.background};
+        background: ${props => props.theme.colors.elements};
         width: 260px;
         height: 356px;
         border-radius: 6px;
