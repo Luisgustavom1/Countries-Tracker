@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import colors from '../colors'
 
 const Cards = styled.div`
     width: 85%;
@@ -10,7 +9,7 @@ const Cards = styled.div`
     gap: 83px;
     
     div{
-        background: ${props => props.darkMode === true ? colors.DarkModeElements : colors.LightModeBackground};
+        background: ${props => props.theme.colors.background};
         width: 260px;
         height: 356px;
         border-radius: 6px;
@@ -24,7 +23,7 @@ const Cards = styled.div`
         section{
             padding: 0 15px 40px 20px;
             color: ${(props) => 
-                props.darkMode === true ? colors.white : colors.LightModeText
+                props.theme.colors.text
             };
             h1{
                 font-size: 18px;

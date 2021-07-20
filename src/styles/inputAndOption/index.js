@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import colors from '../colors'
 
 const InputAndOption = styled.div`
     width: 85%;
@@ -9,7 +8,7 @@ const InputAndOption = styled.div`
     align-items: center;
     padding-top: 50px;
     .input{
-        background-color: ${props => props.darkMode == true ? colors.DarkModeElements : colors.white};
+        background-color: ${props => props.theme.colors.elements};
         display: flex;
         align-items: center;
         width: 400px;
@@ -21,15 +20,15 @@ const InputAndOption = styled.div`
     .options{
         box-shadow: 2px 2px 10px rgba(0, 0, 0, .1);
         padding: 15px 15px;
-        background-color: ${props => props.darkMode == true ? colors.DarkModeElements : colors.white};
+        background-color: ${props => props.theme.colors.elements};
         border-radius: 6px;
     }
     input{
-        background-color: ${props => props.darkMode == true ? colors.DarkModeElements : colors.white};
-        ;
-        color: ${props => props.darkMode == true ? colors.white : colors.LightModeText};                
+      background-color: ${props => props.theme.colors.elements};
+      ;
+        color: ${props => props.theme.colors.text};                
         ::-webkit-input-placeholder{
-          color: ${props => props.darkMode == true ? colors.white : colors.LightModeText};                
+          color: ${props => props.theme.colors.text};                
         }
       }
 `

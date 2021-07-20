@@ -5,5 +5,7 @@ const AppContext = createContext({
     setToDarkMode: () => {},
     data: [],
     setToData: () => {},
+    theme: {},
+    setTheme: () => {},
 })
 export default AppContext

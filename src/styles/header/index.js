@@ -1,11 +1,11 @@
 import styled from 'styled-components'
-import colors from '../colors'
 
 const Header = styled.header`
     font-weight: 800;
-    color: ${props => props.darkMode == true ? colors.white : colors.DarkModeElements};
-    background-color: ${props => props.darkMode == true ? colors.DarkModeElements : colors.white};
+    color: ${props => props.theme.colors.text};                
+    background-color: ${props => props.theme.colors.elements};
     padding: 7px 0;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, .1);
     .container{
         display: flex;
         justify-content: space-between;

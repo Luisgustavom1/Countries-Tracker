@@ -1,11 +1,9 @@
 import React, { useContext, useEffect, useState } from 'react'
 import AppContext from '../Context/context'
 
-import colors from '../styles/colors'
 import InputAndOption from '../styles/inputAndOption'
 
 export default function InputAndOptionComponente(){
-    const Mode = true
     const [search, setSearch] = useState('a')
     const {data, setToData, darkMode} = useContext(AppContext)
 
@@ -17,10 +15,10 @@ export default function InputAndOptionComponente(){
     },[search])
 
     return(
-        <InputAndOption darkMode={darkMode}>
+        <InputAndOption>
             <div className='input'>
                 {/* <img src={lupa} alt='Icon lupa'></img> */}
-                <i class="fas fa-search" style={{color: `${darkMode == true ? colors.white : colors.LightModeInput}`}}></i>
+                <i class="fas fa-search" style={{color: `${props => props.theme.colors.text}`}}></i>
                 <input type='text' placeholder='Search for a country...' value={search} onChange={(e) => setSearch(e.target.value)}></input>
             </div>
             <div className='options'>
