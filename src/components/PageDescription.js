@@ -17,7 +17,7 @@ export default function Description(){
         setNewData(data.filter((country) => {
             return `:${country.area}` == areaParam && true
         }))
-    },[])
+    }, [areaParam])
     return(
         <>
             <PageDescription>

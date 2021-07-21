@@ -12,7 +12,7 @@ export default function useLastCountry(key, value){
 
     useEffect(() => {
         localStorage.setItem(key, JSON.stringify(state))
-    }, [state])
+    }, [state, key])
 
     return [state, setState]
 }
