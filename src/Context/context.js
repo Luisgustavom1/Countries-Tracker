@@ -1,7 +1,7 @@
 import { createContext } from "react";
 
 const AppContext = createContext({
-    data: [],
+    data: null,
     setToData: () => {},
 })
 export default AppContext

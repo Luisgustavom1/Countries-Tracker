@@ -25,11 +25,10 @@ const InputAndOption = styled.div`
     }
     input{
       background-color: ${props => props.theme.colors.elements};
-      ;
+      color: ${props => props.theme.colors.text};
+      ::-webkit-input-placeholder{
         color: ${props => props.theme.colors.text};                
-        ::-webkit-input-placeholder{
-          color: ${props => props.theme.colors.text};                
-        }
       }
+    }
 `
 export default InputAndOption

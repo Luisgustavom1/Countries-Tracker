@@ -4,11 +4,17 @@ import AppContext from '../Context/context'
 import InputAndOption from '../styles/inputAndOption'
 
 export default function InputAndOptionComponente(){
-    const [search, setSearch] = useState('a')
+    const [search, setSearch] = useState('')
     const {data, setToData} = useContext(AppContext)
 
     useEffect(() => {
-        fetch(`https://restcountries.eu/rest/v2/name/${search}`)
+        let pesquisa = ''
+        if(search == ''){
+            pesquisa = 'all'
+        } else {
+            pesquisa = `name/${search}`
+        }
+        fetch(`https://restcountries.eu/rest/v2/${pesquisa}`)
             .then(res => res.json())
             .then(dados => setToData(dados))
             console.log(data)
@@ -18,7 +24,8 @@ export default function InputAndOptionComponente(){
         <InputAndOption>
             <div className='input'>
                 {/* <img src={lupa} alt='Icon lupa'></img> */}
-                <i class="fas fa-search" style={{color: `${props => props.theme.colors.text}`}}></i>
+                <i class="fas fa-search" style={{color: `${props => props.theme.colors.text};
+                `}}></i>
                 <input type='text' placeholder='Search for a country...' value={search} onChange={(e) => setSearch(e.target.value)}></input>
             </div>
             <div className='options'>
