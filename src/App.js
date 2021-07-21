@@ -20,7 +20,7 @@ const GlobalStyle = createGlobalStyle`
   html{
     font-family: 'Nunito Sans', sans-serif;
   }
-  button, input, textarea{
+  button, input, textarea, select, option{
     outline: none;
     border: none;
   }

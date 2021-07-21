@@ -12,7 +12,7 @@ export default function CardsCountrie(){
             <Cards>
                 {data.map(country => {
                     return  <Link to={`/country/:${country.area}`}>
-                                <div id={country.area}>
+                                <div id={country.area} key={country.area}>
                                     <img src={country.flag} alt='Bandeira do país'></img>
                                     <section>
                                         <h1>{country.name}</h1>

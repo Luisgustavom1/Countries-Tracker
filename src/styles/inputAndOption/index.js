@@ -17,13 +17,16 @@ const InputAndOption = styled.div`
         box-shadow: 2px 2px 10px rgba(0, 0, 0, .1);
         gap: 16px;       
     }
+    select{
+      width: 260px;
+    }
     .options{
         box-shadow: 2px 2px 10px rgba(0, 0, 0, .1);
         padding: 15px 15px;
         background-color: ${props => props.theme.colors.elements};
         border-radius: 6px;
     }
-    input{
+    input, select{
       background-color: ${props => props.theme.colors.elements};
       color: ${props => props.theme.colors.text};
       ::-webkit-input-placeholder{
