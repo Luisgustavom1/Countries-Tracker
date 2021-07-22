@@ -11,14 +11,14 @@ const InputAndOption = styled.div`
         background-color: ${props => props.theme.colors.elements};
         display: flex;
         align-items: center;
-        width: 400px;
+        width: 30vw;
         padding: 15px 25px;
         border-radius: 6px;
         box-shadow: 2px 2px 10px rgba(0, 0, 0, .1);
         gap: 16px;       
     }
     select{
-      width: 260px;
+      width: 20vw;
     }
     .options{
         box-shadow: 2px 2px 10px rgba(0, 0, 0, .1);
@@ -28,6 +28,7 @@ const InputAndOption = styled.div`
     }
     input, select{
       background-color: ${props => props.theme.colors.elements};
+      width: 100%;
       color: ${props => props.theme.colors.text};
       ::-webkit-input-placeholder{
         color: ${props => props.theme.colors.text};                

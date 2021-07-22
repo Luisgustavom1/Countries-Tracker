@@ -31,8 +31,7 @@ export default function InputAndOptionComponente(){
     return(
         <InputAndOption>
             <div className='input'>
-                <i class="fas fa-search" style={{color: `${props => props.theme.colors.text};
-                `}}></i>
+                <i class="fas fa-search" style={{color: `${props => props.theme.colors.text}`}}></i>
                 <input type='text' placeholder='Search for a country...' value={search} onChange={(e) => setSearch(e.target.value)}></input>
             </div>
             <div className='options'>

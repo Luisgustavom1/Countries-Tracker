@@ -7,7 +7,7 @@ const Cards = styled.div`
     display: flex;
     align-items: center;
     gap: 83px;
-    
+    justify-content: center;
     div{
         background: ${props => props.theme.colors.elements};
         width: 260px;
