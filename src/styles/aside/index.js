@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 
 export const Aside = styled.aside`
-    grid-area: aside;
     margin: 80px 0 0 80px;
     color: ${props => props.theme.colors.text};
 
@@ -24,4 +23,5 @@ export const Aside = styled.aside`
 
         grid-area: footer;
     }
+
 `

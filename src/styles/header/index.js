@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 const Header = styled.header`
     font-weight: 800;
+    width: 100vw;
     color: ${props => props.theme.colors.text};                
     background-color: ${props => props.theme.colors.elements};
     padding: 7px 0;
