@@ -1,3 +1,10 @@
+# Rest Countries
+![localhost_3000_ (7)](https://user-images.githubusercontent.com/65229051/126814269-5759f795-67fc-4cf6-82ae-04e3b4f1de83.png)
+![localhost_3000_ (8)](https://user-images.githubusercontent.com/65229051/126814272-0887731b-30d5-4242-96d4-c673cf508c55.png)
+![Captura de tela 2021-07-23 13 43 10](https://user-images.githubusercontent.com/65229051/126814709-2bb9900a-715c-48aa-8f2e-6e7229c87778.png)
+![Captura de tela 2021-07-23 13 43 13](https://user-images.githubusercontent.com/65229051/126814715-e4fd897c-8bfd-4e25-8f37-c6e80cae925f.png)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
